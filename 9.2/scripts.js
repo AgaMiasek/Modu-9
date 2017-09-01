@@ -12,4 +12,3 @@ var newName = 'Maniek'
 	console.log(allNames.push(newName));
 	}
 console.log(allNames);
-else {'imie już jest'}
