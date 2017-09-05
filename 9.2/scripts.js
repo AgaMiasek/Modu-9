@@ -7,8 +7,8 @@ console.log(allNames);
 
 var newName = 'Maniek'
 
-  if (allNames.indexOf(newName) === -1) {
+if (allNames.indexOf(newName) === -1) {
 	 
-	console.log(allNames.push(newName));
-	}
+	allNames.push(newName);
+}
 console.log(allNames);
