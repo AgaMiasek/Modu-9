@@ -132,10 +132,6 @@ function setGamePoints() {
 
 
 //end of game
-var winnerInfo          = document.getElementById('js-winnerInfo'),
-    playerPointsModal   = document.getElementById('js-playerPointsModal'),
-    playerNameModal     = document.getElementById('js-playerNameModal'),
-    computerPointsModal = document.getElementById('js-computerPointsModal');
 
 function checkeEndGame() {
 
