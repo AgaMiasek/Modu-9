@@ -3,26 +3,33 @@
 	<head>
 		<title>The RoPerS Game - Rock-Paper-Scissors</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
         <div class="container">
             <h3 class="text-center">
-                Welcome to the game<br>
+                Welcome to the game
                 <span class="label label-default">Rock</span>
                 <span class="label label-info">Paper</span>
                 <span class="label label-danger">Scissors</span>
             </h3>
         </div>
+
+        <!--przycisk nowej gry-->
+
         <div id="js-newGameElement" class="container">
             <div class="row text-center">
-				<button id="js-newGameButton" class="btn btn-default">New GAME</button>
+				<button id="js-newGameButton" class="btn btn-default">
+				New game
+				</button>
 			</div>
         </div>  
+
+        <!--wybór gracza-->
+
         <div id="js-playerPickElement" class="container">
             <div class="row text-center">
                 <button id="js-playerPick_rock" class="btn">
@@ -45,14 +52,17 @@
                 </button>
             </div>
         </div> 
+
+        <!--tabela wyników-->
+
 		<div id="js-resultsTableElement" class="container">
 			<div class="row">
 				<div class="col-xs-5 text-center">
 					<span id="js-playerPoints" class="badge">
-						0
-					</span><br>
+					0
+					</span>
 					<span id="js-playerName">
-						Player Name
+					Player Name
 					</span>
 				</div>
 				<div class="col-xs-2 text-center">
@@ -60,8 +70,8 @@
 				</div>
 				<div class="col-xs-5 text-center">
 					<span id="js-computerPoints" class="badge">
-						0
-					</span><br>
+					0
+					</span>
 					Computer
 				</div>
 			</div>
@@ -135,8 +145,8 @@
 				</div>
 			</div>
 		</div>
-		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 		<script async src="script.js"></script>
 	</body>
 </html>
