@@ -42,6 +42,7 @@ function setGameElements() {
             break;
         case 'ended':
                 newGameBtn.innerHTML = 'Jeszcze raz';
+
          case 'notStarted':
         default:        
                 newGameElem.style.display = 'block';
@@ -65,23 +66,24 @@ function newGame() {
         setGameElements();
 
         playerNameElem.innerHTML = player.name;
-       // setGamePoints();
+		
+       setGamePoints();
     }
 }    
 
 //wybór gracza
 function playerPick(playerPick) {
 
-   var computerPick = getComputerPick();
+   	var computerPick = getComputerPick();
 
     playerPickElem.innerHTML = playerPick;   //wybór gracza
  
     computerPickElem.innerHTML = computerPick;  //wybór komputera
 
-   checkRoundWinner(playerPick, computerPick);
-     setGamePoints();
+   	checkRoundWinner(playerPick, computerPick);
+    setGamePoints();
 
-     checkeEndGame(); 
+    checkEndGame(); 
 }
 
 //losowanie wyboru komputera
@@ -131,16 +133,17 @@ function setGamePoints() {
 
 
 
-//end of game
+//koniec gry
 
-function checkeEndGame() {
+function checkEndGame() {
 
     console.log('endGame');
 
     if( player.score === 10 || computer.score === 10) {
 
         gameState = "ended";
+
         setGameElements();
     }
 
-    }
+}
