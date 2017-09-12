@@ -82,7 +82,7 @@ function playerPick(playerPick) {
  
     computerPickElem.innerHTML = computerPick;  //wybór komputera
 
-   	checkRoundWinner(playerPick, computerPick);
+	checkRoundWinner(playerPick, computerPick);
     setGamePoints();
 
     checkEndGame(); 
@@ -133,9 +133,6 @@ function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
     computerPointsElem.innerHTML = computer.score;
 }
-
-
-
 
 //koniec gry
 
