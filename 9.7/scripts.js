@@ -75,17 +75,17 @@ function newGame() {
 //wybór gracza
 function playerPick(playerPick) {
 
-   	var computerPick = getComputerPick();
+	var computerPick = getComputerPick();
 
 
-    playerPickElem.innerHTML = playerPick;   //wybór gracza
- 
-    computerPickElem.innerHTML = computerPick;  //wybór komputera
+	playerPickElem.innerHTML = playerPick;   //wybór gracza
+	 
+	computerPickElem.innerHTML = computerPick;  //wybór komputera
 
 	checkRoundWinner(playerPick, computerPick);
-    setGamePoints();
+	setGamePoints();
 
-    checkEndGame(); 
+	checkEndGame(); 
 
 }
 
