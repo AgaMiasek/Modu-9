@@ -66,8 +66,9 @@ function newGame() {
         setGameElements();
 
         playerNameElem.innerHTML = player.name;
-		
-       setGamePoints();
+
+        setGamePoints();
+
     }
 }    
 
@@ -75,6 +76,7 @@ function newGame() {
 function playerPick(playerPick) {
 
    	var computerPick = getComputerPick();
+
 
     playerPickElem.innerHTML = playerPick;   //wybór gracza
  
@@ -84,6 +86,7 @@ function playerPick(playerPick) {
     setGamePoints();
 
     checkEndGame(); 
+
 }
 
 //losowanie wyboru komputera
@@ -133,6 +136,7 @@ function setGamePoints() {
 
 
 
+
 //koniec gry
 
 function checkEndGame() {
@@ -143,7 +147,10 @@ function checkEndGame() {
 
         gameState = "ended";
 
+
+ 
         setGameElements();
     }
 
 }
+
