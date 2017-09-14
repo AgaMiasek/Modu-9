@@ -140,14 +140,16 @@ function checkEndGame() {
 
     console.log('endGame');
 
-    if( player.score === 10 || computer.score === 10) {
+        if(player.score === 10) {
+        	alert('Gratulacje! Wygrałeś');    
+        }
+        
+        if(computer.score ===10) {
+        	alert('Przegrałeś, spróbuj ponownie');
 
-        gameState = "ended";
-
-
- 
-        setGameElements();
-    }
-
+       		gameState = "ended";
+    
+        }
+ 		setGameElements();
 }
 
