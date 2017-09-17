@@ -1,0 +1,15 @@
+h3 {
+	font-size: 30px;
+	padding: 50px;
+}
+.btn {
+	margin: 20px;
+}
+#js-resultsTableElement {
+	margin-top: 80px;
+}
+.badge  {
+	display: block;
+	width: 30px;
+	margin: 10px auto;
+}

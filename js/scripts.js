@@ -19,3 +19,32 @@ console.log(triangle2Area);
 var triangle3Area = getTriangleArea(10,0);
 
 console.log(triangle3Area);
+
+var femaleNames = ['Ania', 'Basia', 'Ola', 'Jola', 'Kasia'];
+var maleNames = ['Arek', 'Jarek', 'Olek', 'Darek', 'Wojtek'];
+
+var allNames = femaleNames.concat(maleNames);
+
+console.log(allNames);
+
+var newName = 'krzys'
+var x = allNames.push(newName);
+
+//console.log(allNames);
+
+//var indexOf(newName) = allNames.indexOf(newName);
+
+//console.log('The search value is on ' + indexOf(newName) + ' position');
+
+//console.log(allNames[indexOf(newName)]);
+
+
+  if (allNames.indexOf(newName) === -1) {
+	console.log(x);
+	} 
+console.log(allNames);
+else {
+		console.log('To imię jest w bazie');
+	}
+
+	
