@@ -138,20 +138,15 @@ function setGamePoints() {
 
 function checkEndGame() {
 
-    console.log('endGame');
-
-        if(player.score === 10) {
-        	alert('Gratulacje ' + player.name + '! Wygrałeś');
-
-            gameState = "ended";    
-        }
-        
-        if(computer.score ===10) {
-        	alert('Przegrałeś, spróbuj ponownie');
-
-       		gameState = "ended";
-    
-        }
- 		setGameElements();
+    if(player.score === 10) {
+    	alert('Gratulacje ' + player.name + '! Wygrałeś');
+        gameState = "ended";   
+    }
+    if(computer.score ===10) {
+    	alert('Przegrałeś, spróbuj ponownie');
+       gameState = "ended";  
+     } 
+     
+    setGameElements(); 
 }
-
+   
